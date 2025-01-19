@@ -2,7 +2,7 @@
 #__BONES
 #__by__CHUCK_LARDO
 #__licence__CC-BY-SA 4.0
-#__version__1.0
+#__version__1.1
 #__2024
 #__target resolution 320x240
 #__tested on iPod Classic (6th Gen) and HiFi Walker H2
@@ -81,11 +81,11 @@
 %pb(0,0,260,21,PB,backdrop,PBB)
 #
 #__Time Elapsed
-%Vl(mainDisplay,30,190,40,15,2)
+%Vl(mainDisplay,30,190,60,15,2)
 %al%pc
 #
 #__Time Total
-%Vl(mainDisplay,-70,190,40,15,2)
+%Vl(mainDisplay,-90,190,60,15,2)
 %ar%pt
 #
 #
@@ -97,11 +97,11 @@
 #
 #__Time
 %Vl(holdScreen,30,70,160,60,5)
-%cH:%cM
+%?cf<%cH|%cI>:%cM
 #
 #__xxx
 %Vl(holdScreen,-110,100,80,22,3)
-%arxxx
+%ar%?cf<xxx|%cP>
 #
 #__Line
 %Vl(holdScreen,30,155,260,1,-)
