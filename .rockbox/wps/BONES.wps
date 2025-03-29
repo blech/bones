@@ -14,10 +14,10 @@
 %wd
 #
 #__Preload Fonts
-%Fl(2,15-ProFont.fnt)
-%Fl(3,22-ProFont.fnt)
-%Fl(4,29-ProFont.fnt)
-%Fl(5,47-ProFont.fnt)
+%Fl(2,08-Rockbox-Propfont.fnt)
+%Fl(3,11-ProFont.fnt)
+%Fl(4,15-ProFont.fnt)
+%Fl(5,22-ProFont.fnt)
 #
 #__Preload Images
 %xl(PBB,pb_back.bmp,0,0)
@@ -38,96 +38,96 @@
 ###__Main Display__###
 #
 #__Clear Screen
-%Vl(mainDisplay,0,0,320,240,-)
+%Vl(mainDisplay,0,0,160,120,-)
 #
 #__Track Number
-%Vl(mainDisplay,30,40,120,-,2)
+%Vl(mainDisplay,15,20,60,-,2)
 %alTRACK %in
 #
 #__Shuffle
-%Vl(mainDisplay,-110,40,80,-,2)
+%Vl(mainDisplay,-55,20,40,-,2)
 %ac%?ps<SHUFFLE ON>%Vs(invert)
 #
 #__Track Title
-%Vl(mainDisplay,30,60,260,-,4)
+%Vl(mainDisplay,15,30,130,-,4)
 %s%it
 #
 #__Artist/Album
-%Vl(mainDisplay,30,90,260,-,3)
+%Vl(mainDisplay,15,45,130,-,3)
 %s%t(6)%ia;%s%t(6)%id
 #
 #__File Type
-%Vl(mainDisplay,30,120,60,-,2)
+%Vl(mainDisplay,15,60,30,-,2)
 %?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?>
 #
 #__Repeat
-%Vl(mainDisplay,170,120,100,-,2)
+%Vl(mainDisplay,85,60,50,-,2)
 %ar%?mm<|REPEAT|REPEAT|REPEAT|REPEAT> %?mm<|ALL|ONE|SHUFFLE|A-B>
 #
 #__Play/Pause Icons
-%Vl(mainDisplay,-41,122,11,11,-)
+%Vl(mainDisplay,-25,56,10,10,-)
 %?mp<%xd(T)|%xd(L)|%xd(Z)>
 #
 #__Volume Bar
-%Vl(mainDisplay,30,145,-,-,-)
-%pv(0,0,220,11,VB,backdrop,VBB)
+%Vl(mainDisplay,15,70,-,-,-)
+%pv(0,0,110,5,VB,backdrop,VBB)
 #
 #__Volume Text
-%Vl(mainDisplay,250,143,40,-,2)
+%Vl(mainDisplay,-42,68,27,-,2)
 %ar%pvdb
 #
 #__Track Progress Bar
-%Vl(mainDisplay,30,165,-,-,-)
-%pb(0,0,260,21,PB,backdrop,PBB)
+%Vl(mainDisplay,15,80,-,-,-)
+%pb(0,0,130,10,PB,backdrop,PBB)
 #
 #__Time Elapsed
-%Vl(mainDisplay,30,190,60,15,2)
+%Vl(mainDisplay,15,90,30,10,2)
 %al%pc
 #
 #__Time Total
-%Vl(mainDisplay,-90,190,60,15,2)
+%Vl(mainDisplay,-45,90,30,10,2)
 %ar%pt
 #
 #
 ###__Hold Screen__###
 #
 #__Clear Screen
-%Vl(holdScreen,0,0,320,240,-)
+%Vl(holdScreen,0,0,160,120,-)
 #
 #
 #__Time
-%Vl(holdScreen,30,70,160,60,5)
+%Vl(holdScreen,15,35,80,30,5)
 %?cf<%cH|%cI>:%cM
 #
 #__xxx
-%Vl(holdScreen,-110,100,80,22,3)
+%Vl(holdScreen,-55,50,40,11,3)
 %ar%?cf<xxx|%cP>
 #
 #__Line
-%Vl(holdScreen,30,155,260,1,-)
-%dr(0,0,260,1)
+%Vl(holdScreen,15,77,130,0,-)
+%dr(0,0,130,1)
 #
 #__Battery Label
-%Vl(holdScreen,30,30,40,14,2)
+%Vl(holdScreen,15,15,20,7,2)
 %alBATT
 #
 #__Battery Bar
-%Vl(holdScreen,70,32,180,11,-)
-%bl(0,0,180,11,BB,backdrop,BBB)
+%Vl(holdScreen,35,16,90,5,-)
+%bl(0,0,90,5,BB,backdrop,BBB)
 #
 #__Battery %
-%Vl(holdScreen,250,30,40,14,2)
+%Vl(holdScreen,125,15,20,7,2)
 %ar%bl%%
 #
 #__Song/Artist
-%Vl(holdScreen,30,170,260,15,2)
+%Vl(holdScreen,15,85,130,7,2)
 %s%ia - %it
 #
 #__Play/Pause Icons
-%Vl(holdScreen,30,199,11,11,-)
+%Vl(holdScreen,15,99,5,5,-)
 %?mp<%xd(T)|%xd(L)|%xd(Z)>
 #
 #__Time Remaining
-%Vl(holdScreen,-110,195,80,15,2)
+%Vl(holdScreen,-55,97,40,7,2)
 %ar-%pr
 #

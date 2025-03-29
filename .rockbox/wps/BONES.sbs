@@ -16,17 +16,17 @@
 %?Lt<|>
 #
 #__Preload Fonts
-%Fl(2,15-ProFont.fnt)
-%Fl(3,22-ProFont.fnt)
+%Fl(2,08-Rockbox-Propfont.fnt)
+%Fl(3,11-ProFont.fnt)
 #
 #__Preload Images
 %xl(X,bg_skull.bmp,0,0)
 #
 #__UI Viewport
-%Vi(-,30,60,260,120,3)%Vf(-)%Vb(-)
+%Vi(-,15,30,130,60,3)%Vf(-)%Vb(-)
 #
 #__Hold indicator
-%V(30,30,-,-,3)
+%V(30,15,-,-,3)
 %?mh<xxx|>
 #
 #
@@ -34,16 +34,16 @@
 %?if(%cs, =, 21)<%Vd(usbScreen)>
 #
 #__Clear Screen
-%Vl(usbScreen,0,0,320,240,-)
+%Vl(usbScreen,0,0,160,120,-)
 #
 #__USB Text
-%Vl(usbScreen,30,30,260,-,3)
+%Vl(usbScreen,15,15,130,-,3)
 %acUSB%Vs(invert)
 #
-%Vl(usbScreen,30,200,260,-,2)
+%Vl(usbScreen,15,100,130,-,2)
 %ac! EJECT BEFORE DISCONNECTING !
 #
 #__Skull
-%Vl(usbScreen,30,60,260,130,-)
+%Vl(usbScreen,15,30,130,65,-)
 %xd(X)
 #
