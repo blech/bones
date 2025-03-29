@@ -1,13 +1,9 @@
-# BONES
+# BONES/2
 
-by CHUCK LARDO
+A half-scale modification of [BONES](https://github.com/mabbbbbbbbbbb/BONES), originally by Chuck Lardo.
 
-licence CC-BY-SA 4.0
+Paul Mison, 2025. Version 0.1.
 
-version 1.0
+Target resolution: 160x120.
 
-2024
-
-target resolution 320x240
-
-tested on iPod Classic (6th Gen) and HiFi Walker H2
+Tested on Rockbox UI simulator & iPod 4G (monochrome).
