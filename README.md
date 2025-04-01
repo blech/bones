@@ -2,7 +2,7 @@
 
 A half-scale modification of [BONES](https://github.com/mabbbbbbbbbbb/BONES), originally by Chuck Lardo.
 
-Paul Mison, 2025. Version 0.1.
+Paul Mison, 2025. Version 1.1.
 
 Target resolution: 160x120.
 
