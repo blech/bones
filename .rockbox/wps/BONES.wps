@@ -58,7 +58,7 @@
 #
 #__File Type
 %Vl(mainDisplay,15,60,90,-,2)
-%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?> %?fv<~|>%fbkbps %fkkhz
+%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?> %?fv<~|>%fk/%fb
 #
 #__Repeat
 %Vl(mainDisplay,98,60,40,-,2)
