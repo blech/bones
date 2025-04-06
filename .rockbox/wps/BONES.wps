@@ -42,7 +42,7 @@
 #
 #__Track Number
 %Vl(mainDisplay,15,20,60,-,2)
-%alTRACK %in
+%s%alTRACK %pp/%pe
 #
 #__Shuffle
 %Vl(mainDisplay,-55,20,40,-,2)
@@ -57,12 +57,12 @@
 %s%t(6)%ia;%s%t(6)%id
 #
 #__File Type
-%Vl(mainDisplay,15,60,40,-,2)
-%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?>
+%Vl(mainDisplay,15,60,90,-,2)
+%?fc<MP1|MP2|MP3|AIFF|WAV|VORBIS|FLAC|MPC|A52|WAVPAC|ALAC|AAC|SHORTEN|SID|ADX|NSF|SPEEX|SPC|APE|WMA|?> %?fv<~|>%fbkbps %fkkhz
 #
 #__Repeat
-%Vl(mainDisplay,60,60,75,-,2)
-%ar%?mm<|REPEAT|REPEAT|REPEAT|REPEAT> %?mm<|ALL|ONE|SHUFFLE|A-B>
+%Vl(mainDisplay,98,60,40,-,2)
+%ar%?mm<|REPEAT|REPEAT|RPT|REPEAT> %?mm<|ALL|ONE|SHUFFLE|A-B>
 #
 #__Play/Pause Icons
 %Vl(mainDisplay,-21,60,7,7,-)
@@ -97,7 +97,7 @@
 #
 #__Time
 %Vl(holdScreen,15,35,80,30,5)
-%?cf<%cH|%cI>:%cM
+%?cf<%cH|%cl>:%cM
 #
 #__xxx
 %Vl(holdScreen,-55,50,40,11,3)
